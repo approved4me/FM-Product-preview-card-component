@@ -7,7 +7,6 @@
 }
 
 body {
-    width: 1440px;
     height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -101,10 +100,6 @@ p {
     background: hsl(210, 46%, 95%)
 }
 
-.share path {
-    fill: red;
-}
-
 @media only screen and (max-width: 768px) {
     body {
         width: 100%;
@@ -113,6 +108,7 @@ p {
 
     .container {
         flex-direction: column;
+        margin-top: 50px;
         width: 375px;
     }
 
