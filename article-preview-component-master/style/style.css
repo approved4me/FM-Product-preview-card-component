@@ -22,13 +22,15 @@ body {
     margin: 50px 0 50px 0;
     width: 375px;
     overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 2px 5px 20px;
+    border-radius: 10px;
+    background: #fff;
 }
 
 .content {
-    padding: 40px;
+    padding: 20px;
 }
+
+
 
 .header img {
     width: 100%;
@@ -44,7 +46,7 @@ body {
 }
 
 .user_infos {
-    padding: 20px 0 20px 40px;
+    padding: 0 0 20px 20px;
     display: flex;
 }
 
@@ -55,14 +57,26 @@ body {
     margin-right: 20px;
 }
 
+
+
 .share {
-    padding-right: 40px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-right: 40px;
     z-index: 1;
+    background: hsl(210, 46%, 95%);
+    display: table-cell;
+    text-align: center;
+    width: 40px;
+    line-height: 40px;
+    vertical-align: bottom;
 }
+
 
 .share:hover + .user_social {
     bottom: 0;
     height: 100%;
+    padding: 40px;
 }
 
 .user_social {
@@ -76,15 +90,15 @@ body {
     display: flex;
     align-items: center;
     overflow: hidden;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .user_social img {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 h1 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: hsl(217, 19%, 35%);
     line-height: 1.3em;
     font-weight: 700;
@@ -99,6 +113,8 @@ h2 {
 
 h3 {
     font-weight: 100;
+    font-size: .8rem;
+    letter-spacing: 8px;
 }
 
 p {
@@ -112,6 +128,46 @@ p {
     .container {
         flex-direction: row;
         width: 730px;
+        overflow: visible;
+    }
+
+    .content {
+        padding: 40px 40px 20px 40px;
+    }
+
+    .header img {
+        object-fit: cover;
+        object-position: 0 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .user_social {
+        visibility: hidden;
+        height: 60px;
+        left: 257px;
+        width: 60%;
+        border-radius: 10px;
+        bottom: 30px;
+        overflow: visible
+    }
+
+    .user_social:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%);
+        /* center horizontally*/
+        border: .8em solid transparent;
+        border-top-color: hsl(217, 19%, 35%);
+    }
+
+    .share:hover + .user_social {
+        bottom: 80px;
+        height: 100%;
+        padding: 0 40px;
+        visibility: visible;
     }
 
 }
