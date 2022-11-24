@@ -1,3 +1,3 @@
 # FM-Product-preview-card-component
-Frontend Mentor Challenge
+Frontend Mentor Challenge\
 https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa
