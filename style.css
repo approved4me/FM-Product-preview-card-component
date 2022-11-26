@@ -60,6 +60,7 @@
     background-color: var(--white);
     border-radius: 0.5rem;
     overflow: hidden;
+    max-width: 600px;;
   }
 
   .product__content {
@@ -107,9 +108,23 @@ p {
 .button img {
     width: 15px;
     height: 16px;
-    margin-right: 0.5rem;
+    margin-right: 0.75rem;
 }
 
 .button:hover {
     background-color: var(--dark-cyan_hover);
+}
+
+@media (min-width: 600px){
+  .product {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .product > * { flex: 1; }
+
+  .product__content {
+    margin-left: 0.5rem;
+  }
+
 }
