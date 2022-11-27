@@ -64,7 +64,7 @@
   }
 
   .product__content {
-    padding: 1rem;
+    padding: 0.8rem;
     display: flex;
     flex-direction: column;
   }
@@ -117,14 +117,12 @@ p {
 
 @media (min-width: 600px){
   .product {
-    display: flex;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .product > * { flex: 1; }
-
-  .product__content {
-    margin-left: 0.5rem;
+    .product__content {
+    margin-left: 0.6rem;
   }
 
 }
